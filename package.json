@@ -1,0 +1,32 @@
+{
+  "name": "demo-devcoach-122",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "NODE_ENV=production node ./src/server.js",
+    "start:dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src --fix",
+    "migrate": "node-pg-migrate up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "@antoniogiordano/hacli": "^1.0.2",
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/jwt": "^3.2.0",
+    "@redis-ai/langcache": "^0.11.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "nanoid": "^3.3.7",
+    "node-pg-migrate": "^6.2.2",
+    "openai": "^6.9.1",
+    "pg": "^8.11.3"
+  }
+}
